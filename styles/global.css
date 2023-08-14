@@ -32,3 +32,8 @@ a {
 img {
   width: 100%;
 }
+
+h1, h2 {
+  font-size: unset;
+  font-weight: unset;
+}
