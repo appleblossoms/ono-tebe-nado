@@ -1,3 +1,7 @@
+body {
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+}
+
 .header,
 .cover__title,
 .lots,
@@ -7,8 +11,21 @@
   padding: 0 3.125rem;
 }
 
+.cover,
+.bet-button,
+.lots__heading,
+.card__title,
+.about__title {
+  text-transform: uppercase;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
 .header {
-  min-height: 18.31rem;
+  padding: 7.188rem 3.125rem 5.75rem 3.125rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -50,7 +67,6 @@
 }
 
 .header__logo-image {
-  width: 9.25rem;
   height: 6.56rem;
 }
 
@@ -67,6 +83,7 @@
 
 .address a {
   text-decoration-thickness: 1px;
+  max-width: fit-content;
 }
 
 .card_type_film,
@@ -166,11 +183,12 @@
   justify-content: center;
   gap: 1.56rem;
   list-style: none;
-  padding: 1.69rem 0 1.88rem 0;
+  margin: 1.69rem 0 1.88rem 0;
+  flex-wrap: wrap;
 }
 
 .lots__card-list-item {
-  min-width: 26.875rem;
+  width: 26.875rem;
   min-height: 28.125rem;
   flex-grow: 1;
 }
@@ -237,15 +255,14 @@
 .about {
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-gap: 8px 25px;
+  gap: 0.5rem 1.563rem;
 }
 
 .about__logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 15rem;
-  height: 15rem;
+  padding: 3.938rem 2.875rem;
   margin: 0 5.94rem;
   background-color: black;
   border-radius: 50%;
@@ -270,24 +287,18 @@
 .about__text {
   font-size: 1.25rem;
   font-weight: 400;
+  line-height: 1.438rem;
   grid-column: 2 / 2;
   grid-row: 2 / 2;
-}
-
-@media (max-width: 800px) {
-  .about {
-    display: block;
-  }
-
-  .about__logo {
-    display: none;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 1.813rem;
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
-  padding-top: 11.25rem;
+  padding-top: 11.4rem;
   padding-bottom: 5.63rem;
 }
 
