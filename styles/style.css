@@ -52,12 +52,14 @@ a {
   list-style: none;
 }
 
-.header__link {
+.header__link,
+.footer__link {
   text-decoration-thickness: 1px;
   text-underline-offset: 5px;
 }
 
-.header__link-active {
+.header__link-active,
+.footer__link-active {
   text-decoration: none;
 }
 
@@ -309,15 +311,6 @@ a {
   list-style: none;
   font-size: 1.125rem;
   font-weight: 400;
-}
-
-.footer__link {
-  text-decoration-thickness: 1px;
-  text-underline-offset: 5px;
-}
-
-.footer__link-active {
-  text-decoration: none;
 }
 
 .footer__social-list {
